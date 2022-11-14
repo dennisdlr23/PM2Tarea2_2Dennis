@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
+             x:Class="PM2E2_2.MainPage">
+
+    <ScrollView>
+        <StackLayout BackgroundColor="#A9D9D0">
+
+
+            <Label Text="Dennis de la Rosa Ejercicio2_2" TextColor="Black" FontSize="20" HorizontalTextAlignment="Center"/>
+            <forms:SignaturePadView x:Name="PadView" StrokeColor="Black"
+                            BackgroundColor="#F2E7DC"
+                            StrokeWidth="3"
+                            WidthRequest="280"
+                            HeightRequest="360"/>
+
+            <Entry x:Name="txtName" Placeholder="Ingrese su nombre" Keyboard="Text"></Entry>
+            <Entry x:Name="txtDescription" Placeholder="Ingrese una descripción" Keyboard="Text"></Entry>
+
+            <Button x:Name="btnSave" Text="Guardar" Clicked="btnSave_Clicked" BackgroundColor="#0D0D0D" TextColor="White"></Button>
+            <Button x:Name="btnViewSignature" Text="Ver Firmas" Clicked="btnViewSignature_Clicked" BackgroundColor="#0D0D0D" TextColor="White"></Button>
+            <Button x:Name="btnClear" Text="Limpiar Datos" Clicked="btnClear_Clicked" BackgroundColor="#0D0D0D" TextColor="White"></Button>
+        </StackLayout>
+
+    </ScrollView>
+
+</ContentPage>
